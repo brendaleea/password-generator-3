@@ -16,7 +16,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var correctPrompts = getPrompts();
   var passwordText = document.querySelector("#password");
-  console.log(correctPrompts);
+  console.log(correctPrompts, choiceArr);
   
 
 
@@ -34,15 +34,19 @@ function writePassword() {
 
 
 function generatePassword() {
-
+  console.log(choiceArr)
   var password = "";
   for (var i = 0; i < characterLength; i++) {
-    var randomIndex = Math.floor(Math.random() * choiceArr.lenght);
+    var randomIndex = Math.floor(Math.random() * choiceArr.length);
     password = password + choiceArr[randomIndex];
   }
-  return password;
+  
+  return password; 
+  
 
 }
+
+
 
 function getPrompts() {
   choiceArr = [];
@@ -76,13 +80,14 @@ function getPrompts() {
   if (confirm("Would you like numbers in your password?")) {
     choiceArr = choiceArr.concat (numberArr);
   } 
+  console.log[choiceArr]
   return true;
 
 
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());
+generateBtn.addEventListener("click", writePassword);
 
 
 //********I have google'd, youtube and asked for help from TA's and I still cannot get this code to generate a password. I am way late on turning in this assignment so Ive decided to turn in anyway! :/ ****
