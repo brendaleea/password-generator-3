@@ -7,7 +7,7 @@ This application generates random passwords based on the user specific needs. Th
 
 
 ## Visuals
-![PASSWORD GENERATOR](homework/hw3-password generator/Assets/03-javascript-homework-demo.png)
+![PASSWORD GENERATOR](./Screenshot.png)
 
 
 ## Installation
